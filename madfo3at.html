@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدفوعات</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assetts/css/style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .table-container {
+            width: 100%;
+        }
+
+        .footer {
+            width: 100%;
+        }
+
+        @media(max-width:768px) {
+            body {
+                display: block;
+            }
+
+            .table-container {
+                width: 100%;
+            }
+
+            .footer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="brand">
+            <a href="home.html">
+                <img src="assetts/images/Logo.png" alt="">
+            </a>
+        </div>
+        <ul class="nav-links" id="nav">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="user-auctions.html">المزادات</a></li>
+            <li><a href="about.html">كيف يعمل ؟</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <div class="icon" id="menuIcon" onclick="toggleNav()">
+            <i class="fa-solid fa-bars" id="openIcon"></i>
+            <i class="fa-solid fa-x" id="closeIcon"></i>
+        </div>
+        <div class="log-rig">
+            <p style="margin: 0;"><a href="user-info.html"><i class="fa-regular fa-user"></i></a></p>
+            <p style="margin: 0;"><a href="notifications.html"><i class="fa-regular fa-bell"></i></a></p>
+        </div>
+    </nav>
+
+    <div class="hei"></div>
+
+    <div class="table-container my-5" style="z-index: 100;">
+        <table class="table table-bordered text-center" style="width: 90%; margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th>المزاد</th>
+                    <th>التاريخ</th>
+                    <th>المبلغ</th>
+                    <th>طريقة الدفع</th>
+                    <th>الحالة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="inn">
+                        <a href="end-aucation.html" class="table-link">
+                            <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                            <div class="image-info">
+                                <h3>سيارة Mercedes</h3>
+                                <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td>2025/1/1</td>
+                    <td>210,000 ريال حتى الآن</td>
+                    <td>حساب بنكي</td>
+                    <td style="color: green;">تم الدفع</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="ff">
+                <div class="head">
+                    <div class="log">
+                        <img src="assetts/images/Logo.png" alt="">
+                    </div>
+                    <div class="bb">
+                        <p>مقدم لكم برعاية</p>
+                        <img src="assetts/images/Icon.png" alt="Logo">
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>عن مزاد</h3>
+                    <ul>
+                        <li><a href="#">المزادات</a></li>
+                        <li><a href="#">مزاداتك الخاصة</a></li>
+                        <li><a href="#">عن الموقع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>أهم الروابط</h3>
+                    <ul>
+                        <li><a href="#">سياساتنا</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>تواصل معنا</h3>
+                    <p>للاطلاع على احدث الاخبار اكتب لنا ايميلك</p>
+                    <form class="email-form">
+                        <input type="email" placeholder="أدخل بريدك" style="border-radius: 0px;background-color: white;"
+                            required>
+                        <button type="submit" style="border-radius: 0px;">إرسال</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h5>مواقع التواصل</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="last-fot">
+            <p>جميع الحقوق محفوظة ​​لسنة @ 2025 ❤ شركة بيان الرقمية</p>
+        </div>
+    </footer>
+    <script src="assetts/js/bootstrap.bundle.min.js"></script>
+    <script src="assetts/js/madfo3at.js"></script>
+</body>
+
+</html>

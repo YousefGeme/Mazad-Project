@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Verification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assetts/css/style.css">
+</head>
+
+<body>
+    <div class="big-div">
+        <div id="verification-page" class="verification-container">
+            <h1 class="verification-title">تأكيد ملكية رقم الهاتف</h1>
+            <p class="verification-text">تم ارسال كود على رقم هاتفك **322********</p>
+            <p class="verification-text">ادخل الكود المكون من 6 ارقام</p>
+            <div class="code-input-container">
+                <input type="text" maxlength="1" class="code-input-box">
+                <input type="text" maxlength="1" class="code-input-box">
+                <input type="text" maxlength="1" class="code-input-box">
+                <input type="text" maxlength="1" class="code-input-box">
+                <input type="text" maxlength="1" class="code-input-box">
+                <input type="text" maxlength="1" class="code-input-box">
+            </div>
+            <p id="error-message" class="error-alert"></p>
+            <button id="verify-btn" class="verification-button">تأكيد</button>
+        </div>
+
+        <!-- Success Page -->
+        <div id="success-page" class="verification-container hidden-section">
+            <div class="success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="#b38220">
+                    <path d="M20.285 2l-11.285 14.593-5.285-5.285-3.715 3.693 9 9 15-19.001z" />
+                </svg>
+            </div>
+            <h1 class="verification-title">تم انشاء حسابك بنجاح</h1>
+            <p class="verification-text">شكرا لتعاونكم مع منصة مزاد</p>
+            <a href="user-auctions.html" id="start-btn" class="verification-button">بدء المزيد</a>
+        </div>
+    </div>
+    <script src="assetts/js/bootstrap.bundle.min.js"></script>
+    <script src="./assetts/js/popup.js"></script>
+</body>
+
+</html>
