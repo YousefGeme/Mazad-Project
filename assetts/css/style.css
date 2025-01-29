@@ -176,7 +176,7 @@ body {
 
 /* Responsive Updates */
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     .nav {
         padding: 10px 20px;
     }
@@ -3032,6 +3032,30 @@ tbody tr:hover {
 }
 
 /* Media Queries */
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .section-header {
+        font-size: 22px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn-edit,
+    .btn-delete {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .section-header {
         font-size: 20px;
@@ -3050,6 +3074,17 @@ tbody tr:hover {
     .btn-delete {
         font-size: 12px;
         padding: 6px 10px;
+    }
+
+    /* Make table scrollable on smaller screens */
+    .table-responsive {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .data-table {
+        min-width: 900px;
+        /* Ensures the table remains structured */
     }
 }
 
