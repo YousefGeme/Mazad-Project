@@ -7,8 +7,8 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assetts/css/user-auctions.css"> -->
     <link rel="stylesheet" href="assetts/css/style.css">
 </head>
 
@@ -30,6 +30,15 @@
             <i class="fa-solid fa-x" id="closeIcon"></i>
         </div>
         <div class="log-rig">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-door-open"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                </ul>
+            </div>
             <p style="margin: 0;"><a href="user-info.html"><i class="fa-regular fa-user"></i></a></p>
             <p style="margin: 0;"><a href="notifications.html"><i class="fa-regular fa-bell"></i></a></p>
         </div>
@@ -41,10 +50,10 @@
     <div class="user-hero">
         <img src="assetts/images/mazad.jpg" class="back" alt="">
         <div class="user-hero-content container">
-            <div class="user-logo">
+            <div class="user-logo animate__animated animate__fadeInRight animate__fast">
                 <img src="assetts/images/logo center.png" class="img-fluid" alt="مزاد السعودية">
             </div>
-            <p class="user-description">
+            <p class="user-description animate__animated animate__fadeInRight animate__fast">
                 المزادات الخاصة بك
             </p>
         </div>
@@ -55,6 +64,11 @@
 
     <div class="top">
         <div class="main-content">
+            <div class="img-1">
+                <a href="#">
+                    <img src="assetts/images/object.jpg" class="top-img img-fluid" alt="">
+                </a>
+            </div>
             <div class="mazadat container">
                 <div class="mazadat-head">
                     <h1>مزاداتك</h1>
@@ -82,6 +96,62 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td class="inn">
+                                <a href="item.html" class="table-link">
+                                    <img src="assetts/images/car2.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
+                        <tr>
+                            <td class="inn">
+                                <a href="item.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
+                        <tr>
+                            <td class="inn">
+                                <a href="item.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
+                        <tr>
+                            <td class="inn">
+                                <a href="item.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
                         <tr>
                             <td class="inn">
                                 <a href="item.html" class="table-link">
@@ -300,13 +370,18 @@
                     </tbody>
                 </table>
             </div>
+            <div class="img-2">
+                <a href="#">
+                    <img src="assetts/images/car2.jpg" class="top-img img-fluid" alt="">
+                </a>
+            </div>
         </div>
     </div>
 
 
 
     <!-- footer -->
- 
+
     <footer class="footer">
         <div class="footer-container container">
             <div class="ff">
@@ -347,10 +422,10 @@
             <div class="footer-column">
                 <h5>مواقع التواصل</h5>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f footer-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-google footer-icon"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube footer-icon"></i></a>
                 </div>
             </div>
         </div>

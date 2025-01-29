@@ -7,6 +7,8 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
     <link rel="stylesheet" href="assetts/css/style.css">
 </head>
@@ -30,8 +32,17 @@
             <i class="fa-solid fa-x" id="closeIcon"></i>
         </div>
         <div class="log-rig">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-door-open"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                </ul>
+            </div>
             <p style="margin: 0;"><a href="user-info.html"><i class="fa-regular fa-user"></i></a></p>
-            <p style="margin: 0;"><a href="register.html"><i class="fa-regular fa-bell"></i></a></p>
+            <p style="margin: 0;"><a href="notifications.html"><i class="fa-regular fa-bell"></i></a></p>
         </div>
     </nav>
 
@@ -46,7 +57,7 @@
                 <p class="contact-p">اتصل بنا</p>
             </div>
         </div>
-        <div class="left-pp container">
+        <div class="left-pp container animate__animated animate__fadeIn">
             <form action="">
                 <div class="form-head">
                     <h2>معلومات الاتصال</h2>
@@ -62,7 +73,8 @@
             <div class="map-section">
                 <h3>أين نحن؟</h3>
                 <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.745558192209!2d46.67637861540269!3d24.713551084116993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02f8c1e258b7%3A0xa8f2333c6e2e63d9!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1690215652803!5m2!1sen!2s"
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.745558192209!2d46.67637861540269!3d24.713551084116993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02f8c1e258b7%3A0xa8f2333c6e2e63d9!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1690215652803!5m2!1sen!2s"
                         width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
@@ -71,7 +83,7 @@
 
 
     <!-- footer -->
-   
+
     <footer class="footer">
         <div class="footer-container container">
             <div class="ff">
@@ -112,10 +124,10 @@
             <div class="footer-column">
                 <h5>مواقع التواصل</h5>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f footer-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-google footer-icon"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube footer-icon"></i></a>
                 </div>
             </div>
         </div>
@@ -125,8 +137,9 @@
     </footer>
 
 
-    <script src="assetts/js/content.js"></script>
     <script src="assetts/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assetts/js/content.js"></script>
 </body>
 
 </html>

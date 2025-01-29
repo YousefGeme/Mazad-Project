@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
     <link rel="stylesheet" href="assetts/css/style.css">
 </head>
@@ -15,7 +16,7 @@
     <nav class="nav">
         <div class="brand">
             <a href="">
-                <img src="assetts/images/Logo.png" alt="">
+                <img src="assetts/images/Logo.png" alt="Logo">
             </a>
         </div>
         <ul class="nav-links" id="nav">
@@ -40,21 +41,24 @@
     <div class="hero">
         <img src="assetts/images/mazad.jpg" class="back" alt="">
         <div class="hero-content container">
-            <div class="logo">
+            <div class="logo animate__animated animate__fadeInRight">
                 <img src="assetts/images/logo center.png" alt="مزاد السعودية">
             </div>
-            <p class="description">
+            <p class="description animate__animated animate__fadeInRight">
                 منصة مزاد هي الحل من نوعه في الوطن العربي. بسطت لك الآن وأسهلت الطرق المشاركة في المزادات والفوز بها.
             </p>
-            <a href="register.html" class="start-button">ابدأ الان</a>
+            <a href="register.html" class="start-button animate__animated animate__fadeInRight ">ابدأ الان</a>
         </div>
     </div>
 
 
     <div class="top">
-        <img src="assetts/images/OIP (3).png" class="img-1" alt="">
-        <img src="assetts/images/OIP (4).png" class="img-2" alt="">
         <div class="main-content">
+            <div class="img-1">
+                <a href="#">
+                    <img src="assetts/images/test.jpg" class="top-img img-fluid" alt="">
+                </a>
+            </div>
             <div class="mazadat container">
                 <div class="mazadat-head">
                     <h1>مزادات قادمة</h1>
@@ -62,93 +66,148 @@
             </div>
             <div class="table-container my-5">
                 <table class="table table-bordered text-center">
-                    <thead class="con">
+                    <thead>
                         <tr>
                             <th>المزاد على</th>
                             <th>الحالة</th>
-                            <th>سعر بداية المزاد</th>
-                            <th>توقيت البداية</th>
-                            <th>توقيت النهاية</th>
+                            <th>السعر</th>
+                            <th>التوقيت</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="tr1">
+                        <tr>
+                            <td class="inn">
+                                <a href="aucation.html" class="table-link">
+                                    <img src="assetts/images/test.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
+                        <tr>
                             <td class="inn">
                                 <a href="aucation.html" class="table-link">
                                     <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
                                     <div class="image-info">
-                                        <h3>سيارة BMW</h3>
-                                        <p>مزاد علي مرسيديس<br> c600 حاله جديدة بدون اي مشاكل</p>
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
                                     </div>
                                 </a>
                             </td>
-                            <td style="color: green;">جديد</td>
-                            <td>210,000 ريال</td>
-                            <td>12:00 ظهراً</td>
-                            <td>2025 يناير 12 السبت</td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
                         </tr>
-                        <tr class="tr1">
+                        <tr>
                             <td class="inn">
                                 <a href="aucation.html" class="table-link">
                                     <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
                                     <div class="image-info">
-                                        <h3>سيارة BMW</h3>
-                                        <p>مزاد علي مرسيديس<br> c600 حاله جديدة بدون اي مشاكل</p>
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
                                     </div>
                                 </a>
                             </td>
-                            <td style="color: green;">جديد</td>
-                            <td>210,000 ريال</td>
-                            <td>12:00 ظهراً</td>
-                            <td>2025 يناير 12 السبت</td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
                         </tr>
-                        <tr class="tr1">
+                        <tr>
+                            <td class="inn">
+                                <a href="aucation.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
+                        <tr>
+                            <td class="inn">
+                                <a href="aucation.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: orange;">مزاد جاري</td>
+                            <td>210,000 ريال حتى الآن</td>
+                            <td>23 س 00 د على الانتهاء</td>
+                        </tr>
+                        <tr>
                             <td class="inn">
                                 <a href="aucation.html" class="table-link">
                                     <img src="assetts/images/car2.jpg" alt="Offer" class="offer-img">
                                     <div class="image-info">
-                                        <h3>سيارة BMW</h3>
-                                        <p>مزاد علي مرسيديس<br> c600 حاله جديدة بدون اي مشاكل</p>
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
                                     </div>
                                 </a>
                             </td>
-                            <td style="color: orange;">مستعمل</td>
-                            <td>210,000 ريال</td>
-                            <td>12:00 ظهراً</td>
-                            <td>2025 يناير 12 السبت</td>
+                            <td style="color: green;">تم الفوز بها</td>
+                            <td>710,000 ريال</td>
+                            <td>انتهى المزاد</td>
                         </tr>
-                        <tr class="tr1">
+                        <tr>
+                            <td class="inn">
+                                <a href="end-aucation.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: red;">لم تفز بها</td>
+                            <td>710,000 ريال</td>
+                            <td>انتهى المزاد</td>
+                        </tr>
+                        <tr>
+                            <td class="inn">
+                                <a href="end-aucation.html" class="table-link">
+                                    <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
+                                    <div class="image-info">
+                                        <h3>سيارة Mercedes</h3>
+                                        <p>مزاد علي مرسيديس c600 حاله جديدة بدون اي مشاكل</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td style="color: red;">تم الانتهاء</td>
+                            <td>710,000 ريال</td>
+                            <td>انتهى المزاد</td>
+                        </tr>
+                        <tr>
                             <td class="inn">
                                 <a href="aucation.html" class="table-link">
                                     <img src="assetts/images/object.jpg" alt="Offer" class="offer-img">
                                     <div class="image-info">
-                                        <h3>سيارة BMW</h3>
-                                        <p>مزاد علي مرسيديس<br> c600 حاله جديدة بدون اي مشاكل</p>
+                                        <h3>لابتوب</h3>
+                                        <p>مزاد على لابتوب جديد بحالة ممتازة</p>
                                     </div>
                                 </a>
                             </td>
-                            <td style="color: green;">جديد</td>
-                            <td>210,000 ريال</td>
-                            <td>12:00 ظهراً</td>
-                            <td>2025 يناير 12 السبت</td>
-                        </tr>
-                        <tr class="tr1">
-                            <td class="inn">
-                                <a href="aucation.html" class="table-link">
-                                    <img src="assetts/images/car2.jpg" alt="Offer" class="offer-img">
-                                    <div class="image-info">
-                                        <h3>سيارة BMW</h3>
-                                        <p>مزاد علي مرسيديس<br> c600 حاله جديدة بدون اي مشاكل</p>
-                                    </div>
-                                </a>
-                            </td>
-                            <td style="color: orange;">مستعمل</td>
-                            <td>210,000 ريال</td>
-                            <td>12:00 ظهراً</td>
-                            <td>2025 يناير 12 السبت</td>
+                            <td style="color: gray;">لم يبدأ بعد</td>
+                            <td>9,000 ريال</td>
+                            <td>السبت 12 يناير 2025 12:00 ظهراً</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="img-2">
+                <a href="#">
+                    <img src="assetts/images/car2.jpg" class="top-img img-fluid" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -156,7 +215,6 @@
 
 
     <!-- footer -->
-  
     <footer class="footer">
         <div class="footer-container container">
             <div class="ff">
@@ -197,10 +255,10 @@
             <div class="footer-column">
                 <h5>مواقع التواصل</h5>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f footer-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-google footer-icon"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-snapchat footer-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube footer-icon"></i></a>
                 </div>
             </div>
         </div>

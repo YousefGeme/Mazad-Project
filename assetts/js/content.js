@@ -1,31 +1,32 @@
 const nav = document.getElementById("nav");
-const open = document.getElementById("openIcon");
-const close = document.getElementById("closeIcon");
+const openIcon = document.getElementById("openIcon");
+const closeIcon = document.getElementById("closeIcon");
 
+// Toggle navigation visibility
 function toggleNav() {
-    if (!nav.style.height || nav.style.height === "0px") {
-        nav.style.height = "500px";
-        open.style.display = "none";
-        close.style.display = "inline";
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active"); // Close nav
+        openIcon.style.display = "inline"; // Show open icon
+        closeIcon.style.display = "none"; // Hide close icon
     } else {
-        nav.style.height = "0px";
-        open.style.display = "inline";
-        close.style.display = "none";
+        nav.classList.add("active"); // Open nav
+        openIcon.style.display = "none"; // Hide open icon
+        closeIcon.style.display = "inline"; // Show close icon
     }
 }
 
-// Close the navigation when the user scrolls
+// Close navigation on scroll
 window.addEventListener("scroll", () => {
-    if (nav.style.height && nav.style.height !== "0px") {
-        nav.style.height = "0px";
-        open.style.display = "inline";
-        close.style.display = "none";
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        openIcon.style.display = "inline";
+        closeIcon.style.display = "none";
     }
 });
 
-// Reset the nav state on window resize
+// Reset navigation state on window resize
 window.addEventListener("resize", () => {
-    nav.style.height = "0px";
-    open.style.display = "inline";
-    close.style.display = "none";
+    nav.classList.remove("active");
+    openIcon.style.display = "inline";
+    closeIcon.style.display = "none";
 });
