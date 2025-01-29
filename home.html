@@ -8,11 +8,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
     <link rel="stylesheet" href="assetts/css/style.css">
 </head>
 
 <body>
+
+    <div id="loading-screen">
+        <span class="loader"></span>
+    </div>
     <nav class="nav">
         <div class="brand">
             <a href="">
@@ -65,7 +70,7 @@
                 </div>
             </div>
             <div class="table-container my-5">
-                <table class="table table-bordered text-center">
+                <table  data-aos="fade-down" data-aos-once="true" data-aos-duration="1000" class="table table-bordered text-center">
                     <thead>
                         <tr>
                             <th>المزاد على</th>
@@ -266,6 +271,7 @@
             <p>جميع الحقوق محفوظة ​​لسنة @ 2025 ❤ شركة بيان الرقمية</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assetts/js/bootstrap.bundle.min.js"></script>
     <script src="assetts/js/home.js"></script>
 </body>

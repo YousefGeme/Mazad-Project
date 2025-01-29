@@ -31,4 +31,21 @@ window.addEventListener("resize", () => {
     closeIcon.style.display = "none";
 });
 
+// Add an event listener for the DOMContentLoaded event (fires after HTML is loaded)
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+
+    // Add a slight delay before hiding the loading screen for smoothness
+    setTimeout(() => {
+        loadingScreen.classList.add("hidden"); // Add the "hidden" class to fade out
+    }, 500); // Adjust delay as needed (e.g., 500ms)
+});
+
+// Show loading screen before navigating away
+window.addEventListener("beforeunload", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+    loadingScreen.classList.remove("hidden"); // Show loading screen
+});
+
+
 AOS.init();

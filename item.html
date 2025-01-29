@@ -8,11 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
     <link rel="stylesheet" href="assetts/css/style.css">
 </head>
 
 <body>
+    <div id="loading-screen">
+        <span class="loader"></span>
+    </div>
     <nav class="nav">
         <div class="brand">
             <a href="">
@@ -40,7 +44,9 @@
 
     <div class="hero-item">
         <div class="hero-head container">
-            <h1>يبدأ المزاد بعد<span>0 يوم 13 ساعة 2 دقيقه</span></h1>
+            <h1 data-aos="fade-down" data-aos-once="true" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+                data-aos-delay="500">
+                يبدأ المزاد بعد<span>0 يوم 13 ساعة 2 دقيقه</span></h1>
         </div>
         <div class="layout-container">
             <!-- Left Side: Large Image -->
@@ -67,7 +73,8 @@
 
     <!-- details -->
     <div class="container-fluid">
-        <div class="auction-container">
+        <div class="auction-container" data-aos="zoom-in" data-aos-once="true" data-aos-anchor-placement="top-center"
+            data-aos-duration="1000">
             <div class="flex d-flex align-items-center mb-3">
                 <h2 class="auction-header">سيارة Mercedes</h2>
                 <p class="status">الحالة<span>جديد</span></p>
@@ -97,7 +104,7 @@
 
 
 
-    
+
     <footer class="footer">
         <div class="footer-container container">
             <div class="ff">
@@ -149,7 +156,7 @@
             <p>جميع الحقوق محفوظة ​​لسنة @ 2025 ❤ شركة بيان الرقمية</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assetts/js/bootstrap.bundle.min.js"></script>
     <script src="assetts/js/item.js"></script>
 </body>

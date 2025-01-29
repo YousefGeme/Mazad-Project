@@ -8,11 +8,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assetts/css/bootstrap.min.css">
     <link rel="stylesheet" href="assetts/css/style.css">
 </head>
 
 <body>
+    <div id="loading-screen">
+        <span class="loader"></span>
+    </div>
     <nav class="nav">
         <div class="brand">
             <a href="home.html">
@@ -30,6 +34,15 @@
             <i class="fa-solid fa-x" id="closeIcon"></i>
         </div>
         <div class="log-rig">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-door-open"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                </ul>
+            </div>
             <p style="margin: 0;"><a href="user-info.html"><i class="fa-regular fa-user"></i></a></p>
             <p style="margin: 0;"><a href="notifications.html"><i class="fa-regular fa-bell"></i></a></p>
         </div>
@@ -42,7 +55,8 @@
             <img src="assetts/images/Logo.png" alt="">
         </div>
         <div class="payyy">
-            <div class="right-pay animate__animated animate__fadeIn">
+            <div class="right-pay" data-aos="fade-down" data-aos-delay="1000" data-aos-once="true"
+                data-aos-duration="1000">
                 <div class="right-pay-head">
                     <img src="assetts/images/walet.png" alt="">
                     <p>سيتم سحب المبلغ تلقائي بعد ادخال البيانات الصحيح للدفع</p>
@@ -81,7 +95,8 @@
                     </div>
                 </form>
             </div>
-            <div class="left-pay animate__animated animate__fadeIn">
+            <div class="left-pay" data-aos="fade-down" data-aos-delay="1000" data-aos-once="true"
+                data-aos-duration="1000">
                 <div class="left-payy">
                     <div class="top-part">
                         <h3>الفاتورة</h3>
@@ -172,6 +187,8 @@
             <p>جميع الحقوق محفوظة ​​لسنة @ 2025 ❤ شركة بيان الرقمية</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assetts/js/bootstrap.bundle.min.js"></script>
     <script src="assetts/js/home.js"></script>
 </body>
