@@ -28,12 +28,12 @@ body {
 
 /* Navbar Styles */
 .nav {
+    width: 100%;
+    background-color: #EFE8D8;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    background-color: #EFE8D8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +42,10 @@ body {
     z-index: 1000;
     box-shadow: 0px 0.5px 5px rgba(201, 201, 201, 0.8);
     animation: navbar 0.5s forwards;
+}
+
+.hei {
+    height: 80px;
 }
 
 /* Navbar Animation */
@@ -70,6 +74,7 @@ body {
     margin: 0;
     list-style: none;
     transition: 0.5s;
+    z-index: 10000;
 }
 
 .nav-links li a {
@@ -176,7 +181,7 @@ body {
 
 /* Responsive Updates */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .nav {
         padding: 10px 20px;
     }
@@ -433,6 +438,284 @@ body {
     }
 }
 
+/* Intro Section */
+.intro-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: radial-gradient(circle at center, #f5f0e4 20%, #EFE8D8 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+/* Adding a Soft Overlay Texture */
+.intro-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    opacity: 0.2;
+}
+
+/* Floating Shapes Animation */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-shapes {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: floating 6s infinite ease-in-out;
+}
+
+.shape-1 {
+    background-color: white;
+    top: 20%;
+    left: 15%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.shape-2 {
+    background-color: white;
+    top: 60%;
+    right: 20%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 1.5s;
+}
+
+
+.intro-content {
+    position: relative;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.intro-text {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.intro-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #8a5a2b;
+    text-decoration: none;
+    border-radius: 500000px;
+    transition: 0.3s;
+}
+
+.intro-btn:hover {
+    background-color: #AC6A31;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .intro-section {
+        height: 70vh;
+    }
+
+    .intro-content {
+        width: 90%;
+    }
+
+    .intro-title {
+        font-size: 1.8rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+/* About Section */
+/* About Section */
+.about-section {
+    width: 95%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* Form Section */
+.contact-form {
+    width: 50%;
+    padding: 30px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #F8F5F5;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.send-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #8a5a2b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #AC6A31;
+}
+
+/* Map Section */
+.map-container {
+    width: 50%;
+    position: relative;
+}
+
+.map-container a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.map-container img {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Auto height to maintain aspect ratio */
+    object-fit: cover;
+    /* Ensures the image covers the container */
+    object-position: center;
+    /* Keeps the image centered */
+    filter: brightness(0.8) contrast(1.2);
+    /* Adjusts image brightness and contrast */
+    transition: filter 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect on the map image */
+.map-container img:hover {
+    filter: brightness(1) contrast(1.2);
+    /* Slightly brighten and maintain contrast on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .map-container {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .map-container img {
+        height: auto;
+        /* Maintain auto height on larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .send-btn {
+        font-size: 0.9rem;
+    }
+
+    .map-container img {
+        height: auto;
+        /* Auto height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .send-btn {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .map-container img {
+        height: auto;
+        /* Auto height for mobile screens */
+    }
+}
+
+/* about part */
 .content {
     width: 100%;
 }
@@ -611,10 +894,6 @@ body {
     color: red;
     display: none;
     /* Hidden by default */
-}
-
-.hei {
-    height: 80px;
 }
 
 .contact-content {
@@ -1758,6 +2037,7 @@ table {
 thead th {
     background-color: #f8f9fa;
     font-size: 18px;
+    vertical-align: middle;
     font-weight: bold;
     padding: 10px;
 }
@@ -2227,32 +2507,7 @@ tbody td {
     margin: 0 auto;
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-
-.img-1 {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 80px;
-    margin-top: 100px;
-}
-
-.img-2 {
-    width: 100%;
-    height: 300px;
-    margin-top: 100px;
-}
-
-.img-1 img {
-    width: 100%;
-    height: 100%;
-}
-
-
-.img-2 img {
-    width: 100%;
-    height: 100%;
 }
 
 .mazadat {
@@ -2353,119 +2608,84 @@ tbody tr:hover {
     margin-right: 10px;
 }
 
-
-@media (min-width:1260px) {
-
-    .img-1,
-    .img-2 {
-        position: absolute;
-        top: -100px;
-        left: 0;
-        height: 100%;
-        z-index: 11;
-        width: 100%;
-    }
-
-    .img-1 {
-        margin-top: 100px;
-    }
-
-    .img-2 {
-        margin-top: 100px;
-    }
-
-    .img-1 a img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
-    .img-2 a img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    .top-img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-1 {
-        left: 0;
-        width: 200px;
-    }
-
-    .img-2 {
-        right: 0;
-        width: 200px;
-    }
-
-    .main-content {
-        width: 70%;
-    }
+/* Ads Section */
+.ads {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 5px;
 }
 
-@media (min-width:1860px) {
-    .main-content {
-        width: 80%;
-    }
+.ad-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 393px;
+    height: 121px;
+    transition: transform 0.5s ease-in-out;
 }
+
+.ad-item:hover {
+    transform: scale(1.02);
+    z-index: 10;
+}
+
+.ad-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ad-item img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .main-content {
-        width: 95%;
+    .ads {
+        flex-direction: column;
+        gap: 5px;
     }
 
-    .img-1 {
-        margin-top: 100px;
+    .ad-item {
+        max-width: 393px;
+        height: 121px;
     }
-
-    .img-2 {
-        margin-top: 100px;
-    }
-
-    .img-1 img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-2 img {
-        width: 100%;
-        height: 100%;
-    }
-
 }
 
 @media (max-width: 768px) {
-    table {
-        font-size: 14px;
+    .ads {
+        margin: 20px auto;
+        gap: 5px;
     }
 
-    .offer-img {
-        width: 80px;
+    .ad-item {
+        max-width: 393px;
+        height: 121px;
     }
+}
 
-    .image-info h1 {
-        font-size: 16px;
-    }
+@media (max-width: 480px) {
 
-    .image-info p {
-        font-size: 12px;
-    }
-
-    .img-1 {
-        width: 100%;
-        height: 200px;
-        margin-top: 50px;
-        margin-bottom: 0;
-    }
-
-    .img-2 {
-        width: 100%;
-        height: 200px;
-        margin-top: 0;
+    .ad-item {
+        max-width: 393px;
+        height: 121px;
     }
 }
 
