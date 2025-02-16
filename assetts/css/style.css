@@ -254,6 +254,10 @@ body {
     .log-rig i {
         font-size: 14px;
     }
+
+    .nav-links li a::after {
+        bottom: 5px;
+    }
 }
 
 @media (max-width: 400px) {
